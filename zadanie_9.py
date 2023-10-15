@@ -1,7 +1,7 @@
 saldo=0
 print("Witaj w symulacji aplikacji bankowej!\nMożesz wykonać trzy operacje: wpłata, wypłata, sprawdzić saldo.\n")
 while True:
-    wybor=int(input("Którą operację chcesz wybrać:\n[1] Wpłata\n[2] Wypłata\n[3] Sprawdzić saldo\nNależy wybrać numer [1/2/3]: "))
+    wybor=int(input("Którą operację chcesz wybrać:\n[1] Wpłata\n[2] Wypłata\n[3] Sprawdzić saldo\n[4] Wyloguj się\nNależy wybrać numer [1/2/3/4]: "))
 
     if wybor==1:
         ilosc=round(float(input("\nJaką kwotę chcesz wpłacić?\nKwota wpłaty: ")),2)
@@ -16,6 +16,9 @@ while True:
             print(f"Wypłacono {ilosc}zł\n")
     elif wybor==3:
         print(f"Twoje saldo wynosi: {saldo}zł.\n")
+    elif wybor==4:
+        print("\nWylogowano!\n")
+        break
     else:
         print("\nNależy podać odpowiednią cyfrę!\n")
     
