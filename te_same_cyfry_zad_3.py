@@ -60,8 +60,7 @@ cyfry_liczby3 = sprawdz_cyfry(podane_liczby[2])
 if sorted(cyfry_liczby1) == sorted(cyfry_liczby2) == sorted(cyfry_liczby3):
     print("Podane liczby są zbudowane z takich samych cyfr.")
 else:
-    print("Podane liczby nie są zbudowane z takich samych cyfr.")
-    print("Może chciałbyś skorzystać z następujących liczb:")
+    print("Podane liczby nie są zbudowane z takich samych cyfr.\nMoże chciałbyś skorzystać z następujących liczb:")
     wygenerowane1 = generuj_liczby(podane_liczby[0], cyfry_liczby1)
     wygenerowane2 = generuj_liczby(podane_liczby[1], cyfry_liczby2)
     wygenerowane3 = generuj_liczby(podane_liczby[2], cyfry_liczby3)
