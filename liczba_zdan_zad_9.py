@@ -3,7 +3,7 @@ import re
 
 def liczba_zdan(tekst):
     # Tworzenie obiektu wyrażenia regularnego, [.!?] to zestaw znaków, który oznacza dowolny znak
-    wzor = re.compile(r'[.!?]')
+    wzor = re.compile(r'[.!?]\s')
 
     # Znajdywanie wszystkich wystąpień
     wystapienia = re.findall(wzor, tekst)
@@ -21,7 +21,7 @@ def main():
     ilosc_zdan = liczba_zdan(tekst)
 
     # Wyświetl wynik
-    print(f"Liczba zdań w tekście: {ilosc_zdan}")
+    print(f"Liczba zdań w tekście: {ilosc_zdan+1}")
 
 main() # Start programu (*^_^*)
 
