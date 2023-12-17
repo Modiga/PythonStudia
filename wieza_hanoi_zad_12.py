@@ -10,7 +10,7 @@ def hanoi(n, zrodlo, cel, pomoc):
         hanoi(n-1, pomoc, cel, zrodlo)
 
 # Przykład użycia dla x krążków na wieży S, przenosząc je na wieżę C, z użyciem wieży P jako pomocniczej
-hanoi(3, 'S', 'C', 'P')
+hanoi(4, 'S', 'C', 'P')
 
 
 # Wideo: https://youtu.be/iG4lHkfuu8I?t=618
